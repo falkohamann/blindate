@@ -28,6 +28,8 @@ body {
     align-items: center;
     padding: 1rem 2rem;
     background: #000;
+    position: relative;
+    z-index: 10;
 }
 
 .nav-brand {
@@ -35,7 +37,7 @@ body {
 }
 
 .nav-logo {
-    height: 50px;
+    height: 100px;
     width: auto;
     display: block;
     padding: 5px 0;
@@ -58,9 +60,9 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/website/blindate-headr.png');
-    background-size: cover;
+    height: 75vh;
+    background-image: url('../images/website/stage-empty-1.png');
+    background-size: contain;
     background-position: center;
     color: var(--light);
     display: flex;
@@ -70,6 +72,7 @@ body {
     text-align: center;
     padding: 0 1rem;
     background-repeat: no-repeat;
+    background-color: var(--dark);
 }
 
 .hero h1 {
@@ -128,6 +131,7 @@ body {
     background-image: url('../images/website/logo.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .features-with-bg::before {
@@ -275,7 +279,121 @@ body {
         gap: 1rem;
     }
 
+    .nav-links {
+        display: none; /* Hide the links */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on nav height */
+        left: 0;
+        background: #000;
+        text-align: center;
+    }
+
+    .nav-links.open {
+        display: flex; /* Show when 'open' class is added */
+    }
+
+    .nav-toggle {
+    display: none; /* Hide by default on larger screens */
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: var(--light);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: var(--light);
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger::before {
+    top: -10px;
+}
+
+.hamburger::after {
+    top: 10px;
+}
+
+/* Hide Menu by Default on Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the links */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on nav height */
+        left: 0;
+        background: #000;
+        text-align: center;
+    }
+
+    .nav-links.open {
+        display: flex; /* Show when 'open' class is added */
+    }
+
+    .nav-toggle {
+        display: block; /* Show the hamburger button */
+    }
+
+    /* Hamburger to X Animation */
+    .nav-toggle.open .hamburger {
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle.open .hamburger::before {
+        transform: translateY(10px) rotate(90deg);
+    }
+
+    .nav-toggle.open .hamburger::after {
+        transform: translateY(-10px) rotate(90deg);
+    }
+}
+
     .hero h1 {
         font-size: 2.5rem;
+    }
+
+    .features-with-bg {
+        background-size: cover;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
     }
 }

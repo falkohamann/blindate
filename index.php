@@ -1,4 +1,3 @@
-<!-- index.php -->
 <?php include 'header.php'; ?>
 
     <section class="hero">
@@ -9,8 +8,7 @@
 
     <section class="features features-with-bg">
         <div class="feature">
-            <!-- Your feature content -->
-        </div>
+            </div>
     </section>
     <section class="live-music" id="live-music">
     <div class="live-music-container">
@@ -87,3 +85,6 @@
     </section>
 
 <?php include 'footer.php'; ?>
+<script src="script.js"></script>
+</body>
+</html>

@@ -12,6 +12,9 @@
         <a href="#" class="nav-brand">
             <img src="images/website/logo.jpg" alt="Blindate Logo" class="nav-logo">
         </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
         <div class="nav-links">
             <a href="#" class="nav-link">Home</a>
             <a href="#live-music" class="nav-link">Live</a>
