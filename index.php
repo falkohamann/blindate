@@ -87,8 +87,8 @@
     </div>
 </section>
     <section class="gallery">
-    <h2 style="color: var(--primary);">Media</h2>
-    <p style="color: var(--light);">Explore our vibrant performances capturing the essence of every event.</p>
+    <h2 style="color: var(--primary);">Das sind wir</h2>
+    <p style="color: var(--light);">Rockin in a free World!</p>
     <div class="gallery-container">
         <div class="gallery-slider">
             <?php
