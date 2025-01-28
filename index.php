@@ -6,10 +6,11 @@
         <a href="#" class="btn btn-white">Buchungsanfrage</a>
     </section>
 
-    <section class="features features-with-bg">
+   <!--<section class="features features-with-bg">
         <div class="feature">
             </div>
-    </section>
+    </section> */
+    -->
     <section class="live-music" id="live-music">
     <div class="live-music-container">
         <h2 style="color: var(--primary); margin-bottom: 2rem; text-align: center;">Hier könnt ihr uns LIVE erleben!</h2>
