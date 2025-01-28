@@ -87,11 +87,26 @@
     </div>
 </section>
     <section class="gallery">
-        <h2>Media</h2>
-        <p>Explore our vibrant performances capturing the essence of every event.</p>
-        <div class="gallery-grid">
+    <h2 style="color: var(--primary);">Media</h2>
+    <p style="color: var(--light);">Explore our vibrant performances capturing the essence of every event.</p>
+    <div class="gallery-container">
+        <div class="gallery-slider">
+            <?php
+            $imageDir = 'images/gallery/';
+            $images = scandir($imageDir);
+
+            foreach ($images as $image) {
+                if (in_array(pathinfo($image, PATHINFO_EXTENSION), ['jpg', 'jpeg', 'png', 'gif'])) {
+                    echo "<div class='gallery-slide'><img src='$imageDir$image' alt='Gallery Image'></div>";
+                }
+            }
+            ?>
         </div>
-    </section>
+        <button class="slider-prev">&#10094;</button>
+        <button class="slider-next">&#10095;</button>
+        <div class="slider-dots"></div>
+    </div>
+</section>
 
 <?php include 'footer.php'; ?>
 </body>
