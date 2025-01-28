@@ -3,7 +3,6 @@
     <section class="hero">
         <h1>Blindate</h1>
         <p>Rock-Coverband aus dem Raum Dresden</p>
-        <a href="#" class="btn btn-white">Buchungsanfrage</a>
     </section>
 
    <!--<section class="features features-with-bg">
@@ -95,6 +94,6 @@
     </section>
 
 <?php include 'footer.php'; ?>
-<script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
