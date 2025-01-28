@@ -60,7 +60,7 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 75vh;
+    height: 50vh;
     background-image: url('../images/website/stage-empty-1.png');
     background-size: contain;
     background-position: center;
@@ -167,9 +167,25 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; /*  Nur eine Spalte */
     gap: 4rem;
     align-items: center;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Drei Spalten für die Info-Items */
+    gap: 2rem; /* Abstand zwischen den Info-Items */
+}
+
+.info-item {
+    text-align: center;
+    color: var(--light);
+}
+
+.info-item h3 {
+    margin: 1rem 0; /*  Vertikaler Abstand für die Überschriften */
+    color: var(--primary);
 }
 
 /* Live Music Section */
@@ -332,6 +348,12 @@ body {
 
 /* Hide Menu by Default on Mobile */
 @media (max-width: 768px) {
+
+    .info-grid {
+        grid-template-columns: 1fr; /* Eine Spalte für mobile Geräte */
+        gap: 4rem; /* Mehr Abstand zwischen den Zeilen */
+    }
+
     .nav-links {
         display: none; /* Hide the links */
         flex-direction: column;
@@ -389,11 +411,5 @@ body {
 
     .social-links {
         justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-grid {
-        grid-template-columns: 1fr; /* 1 column on very small screens */
     }
 }
