@@ -188,14 +188,18 @@ body {
     color: var(--primary);
 }
 
-/* About Section */
-.about {
+/* About, Tech, and Contact Section Styles */
+.about,
+.tech,
+.contact {
     background: #000;
     color: var(--light);
     padding: 4rem 2rem;
 }
 
-.about-container {
+.about-container,
+.tech-container,
+.contact-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -219,7 +223,6 @@ body {
     margin: 1rem 0;
     color: var(--primary);
 }
-
 /* Live Music Section */
 .live-music {
     background: #000;
@@ -357,6 +360,8 @@ body {
 @media (max-width: 768px) {
     .features,
     .about-container,
+    .tech-container,
+    .contact-container,
     .gallery-grid,
     .footer-container {
         grid-template-columns: 1fr;
@@ -431,7 +436,9 @@ body {
         background-size: cover;
     }
 
-    .about-container {
+    .about-container,
+    .tech-container,
+    .contact-container {
         gap: 2rem;
     }
 

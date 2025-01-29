@@ -61,7 +61,7 @@
         </table>
     </div>
 </section>
-<section class="about">
+<section class="about" id="about">
     <div class="about-container">
         <div>
             <h2>Wir sind Blindate</h2>
@@ -86,7 +86,7 @@
         </div>
     </div>
 </section>
-    <section class="gallery">
+    <section class="gallery" id="media">
     <h2 style="color: var(--primary);">Das sind wir</h2>
     <p style="color: var(--light);">Rockin in a free World!</p>
     <div class="gallery-container">
@@ -107,7 +107,24 @@
         <div class="slider-dots"></div>
     </div>
 </section>
-
+<section class="tech" id="tech">
+        <div class="tech">
+            <div class="info-item">
+                <i class="fas fa-star fa-2x"></i>
+                <h3>technisches</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            </div>
+    </section>
+<section class="contact" id="contact">
+        <div class="contact">
+            <div class="info-item">
+                <i class="fas fa-star fa-2x"></i>
+                <h3>So erreicht ihr uns!</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            </div>
+    </section>
 <?php include 'footer.php'; ?>
 </body>
 <script src="script.js"></script>
