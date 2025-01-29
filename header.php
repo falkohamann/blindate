@@ -9,10 +9,10 @@
 </head>
 <body>
     <nav class="nav">
+    <a href="#" class="nav-brand">
+        <img src="images/website/logo.jpg" alt="Blindate Logo" class="nav-logo">
+    </a>
     <div class="nav-mobile">
-        <a href="#" class="nav-brand">
-            <img src="images/website/logo.jpg" alt="Blindate Logo" class="nav-logo">
-        </a>
         <button class="nav-toggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
