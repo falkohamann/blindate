@@ -156,11 +156,11 @@ body {
     gap: 2rem;
     margin: 0 auto;
     position: relative;
+    height: 5vh;
 }
 
 .features-with-bg {
     background: #000;
-    background-image: url('../images/website/logo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -426,6 +426,9 @@ body {
     .hero {
         height: 50vh;
         background-size: contain;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
     }
 
     .hero h1 {
