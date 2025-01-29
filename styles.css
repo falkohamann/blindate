@@ -60,8 +60,8 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 50vh;
-    background-image: url('../images/website/stage-empty-1.png');
+    height: 85vh;
+    background-image: url('../images/website/blindate-headr.png');
     background-size: contain;
     background-position: center;
     color: var(--light);
@@ -425,6 +425,21 @@ body {
     .nav-toggle.open .hamburger::after {
         transform: translateY(-10px) rotate(90deg);
     }
+}
+    .hero {
+    height: 50vh;
+    background-image: url('../images/website/blindate-headr.png');
+    background-size: contain;
+    background-position: center;
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    background-repeat: no-repeat;
+    background-color: var(--dark);
 }
 
     .hero h1 {
