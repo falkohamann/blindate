@@ -9,18 +9,22 @@
 </head>
 <body>
     <nav class="nav">
-        <a href="#" class="nav-brand">
-            <img src="images/website/logo.jpg" alt="Blindate Logo" class="nav-logo">
-        </a>
+    <a href="#" class="nav-brand">
+        <img src="images/website/logo.jpg" alt="Blindate Logo" class="nav-logo">
+    </a>
+    <div class="nav-mobile">
         <button class="nav-toggle" aria-label="Toggle navigation">
-            <span class="hamburger"></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
-        <div class="nav-links">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#live-music" class="nav-link">Live</a>
-            <a href="#" class="nav-link">Über Uns</a>
-            <a href="#" class="nav-link">Media</a>
-            <a href="#" class="nav-link">Technisches</a>
-            <a href="#" class="nav-link">Kontakt</a>
-        </div>
-    </nav>
+    </div>
+    <div class="nav-links">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#live-music" class="nav-link">Live</a>
+        <a href="#" class="nav-link">Über Uns</a>
+        <a href="#" class="nav-link">Media</a>
+        <a href="#" class="nav-link">Technisches</a>
+        <a href="#" class="nav-link">Kontakt</a>
+    </div>
+</nav>

@@ -1,23 +1,20 @@
 /* script.js */
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
-const navMenuLinks = document.querySelectorAll('.nav-links a');
 
 navToggle.addEventListener('click', () => {
-    // Toggle the 'open' class on each click
-    navLinks.classList.toggle('open');
-    navToggle.classList.toggle('open');
+    navToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
 });
 
-navMenuLinks.forEach(link => {
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
-        // Only close the menu if it's currently open
-        if (navLinks.classList.contains('open')) {
-            navLinks.classList.remove('open');
-            navToggle.classList.remove('open');
-        }
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
     });
 });
+
 const gallerySlider = document.querySelector('.gallery-slider');
 const gallerySlides = document.querySelectorAll('.gallery-slide');
 const prevButton = document.querySelector('.slider-prev');
