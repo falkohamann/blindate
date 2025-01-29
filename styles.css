@@ -93,7 +93,7 @@ body {
 /* Hero Section */
 .hero {
     height: 85vh;
-    background-image: url('../images/website/blindate-headr.png');
+    background-image: url('images/website/blindate-headr.png');
     background-size: contain;
     background-position: center;
     color: var(--light);
