@@ -22,7 +22,7 @@
         </button>
     </div>
     <div class="nav-links nav-links-right">
-        <a href="#" class="nav-link">Home</a>
+        <a href="index.php" class="nav-link">Home</a>
         <a href="#live-music" class="nav-link">Live</a>
         <a href="#about" class="nav-link">Band</a>
         <a href="#media" class="nav-link">Media</a>
