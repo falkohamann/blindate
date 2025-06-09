@@ -24,11 +24,10 @@ body {
 /* Navigation */
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Align nav content to the right */
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(0,0,0,0.2); /* Transparent background */
-    backdrop-filter: blur(4px); /* Optional: adds blur for readability */
+    background: none; /* No background at all */
     position: fixed;
     top: 0;
     left: 0;

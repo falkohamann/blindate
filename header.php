@@ -9,9 +9,11 @@
 </head>
 <body>
     <nav class="nav">
+    <!--
     <a href="index.php" class="nav-brand">
         <img src="images/website/logo.jpg" alt="Blindate Logo" class="nav-logo">
     </a>
+    -->
     <div class="nav-mobile">
         <button class="nav-toggle" aria-label="Toggle navigation">
             <span></span>
@@ -19,12 +21,12 @@
             <span></span>
         </button>
     </div>
-    <div class="nav-links">
+    <div class="nav-links nav-links-right">
         <a href="#" class="nav-link">Home</a>
         <a href="#live-music" class="nav-link">Live</a>
         <a href="#about" class="nav-link">Band</a>
         <a href="#media" class="nav-link">Media</a>
-        <a href="#tech" class="nav-link">Veranstalter / Presse</a>
+        <!-- <a href="#tech" class="nav-link">Veranstalter / Presse</a> -->
         <a href="#contact" class="nav-link">Kontakt</a>
     </div>
 </nav>

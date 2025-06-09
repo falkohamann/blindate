@@ -39,30 +39,41 @@
     <div class="about-container">
         <div>
             <h2>Wir sind Blindate</h2>
-            <p>Mit über 20 Jahren elektrisierender Auftritte ist Blindate zu einer festen Größe in der Dresdner Musikszene geworden. Unsere Leidenschaft für Musik treibt uns an, unvergessliche Live-Erlebnisse zu schaffen, die beim Publikum nachklingen.</p>
+            <p>BlinDate, eine Band aus dem Raum Dresden. Seit 2002 rocken sie große und kleine Bühnen und bringen
+                jede Menge gute Stimmung auf Stadt- und Dorffeste, Partys und andere Events. Sie fühlen sich auf
+                jeglichen Bühnen zu Hause und lieben es, das Publikum mitzureißen und zum Tanzen, Mitsingen und
+                Toben zu bringen. Ob bekannte Rockklassiker der letzten fünf Dekaden oder Pophits der letzten Jahre
+                - mit dieser Band wird jedes Event zu einem unvergesslichen Erlebnis! Ohne BlinDate schmeckt das
+                Bier nicht, ohne sie gibt ́s kein 1-2- Tipp, ohne sie ist es ganz einfach keine Party. Selbst einfachste
+                Springübungen, Polonaisen oder das Hochhalten von Feuerzeugen macht mit ihrer musikalischen
+
+                Untermalung einfach mehr Spaß! Im Übrigen gibt es BlinDate auch stromlos. Mit ihrer Unplugged-
+                Besetzung befeuern sie auch gern mal Gartenpartys oder Straßenfeste.
+            </p>
         </div>
+        <!--
         <div class="info-grid">
             <div class="info-item">
-                <i class="fas fa-music fa-2x"></i>
-                <h3>Unsere Geschichte</h3>
-                <p>Blindate wurde vor über zwei Jahrzehnten gegründet und brachte eine Gruppe leidenschaftlicher Musiker zusammen. Unser Weg war gefüllt mit unvergesslichen Auftritten und einem Bekenntnis zu Exzellenz in jeder Show, die wir abliefern.</p>
+            <i class="fas fa-music fa-2x"></i>
+            <h3>Unsere Geschichte</h3>
+            <p>Blindate wurde vor über zwei Jahrzehnten gegründet und brachte eine Gruppe leidenschaftlicher Musiker zusammen. Unser Weg war gefüllt mit unvergesslichen Auftritten und einem Bekenntnis zu Exzellenz in jeder Show, die wir abliefern.</p>
             </div>
             <div class="info-item">
-                <i class="fas fa-users fa-2x"></i>
-                <h3>Unser Team</h3>
-                <p>Lernen Sie unsere talentierten Mitglieder kennen: John, Jane, Mike und Emily. Jeder bringt einzigartige Fähigkeiten und Energie mit und stellt sicher, dass jede Performance ein energiegeladenes Erlebnis ist, das das Publikum fesselt.</p>
+            <i class="fas fa-users fa-2x"></i>
+            <h3>Unser Team</h3>
+            <p>Lernen Sie unsere talentierten Mitglieder kennen: John, Jane, Mike und Emily. Jeder bringt einzigartige Fähigkeiten und Energie mit und stellt sicher, dass jede Performance ein energiegeladenes Erlebnis ist, das das Publikum fesselt.</p>
             </div>
             <div class="info-item">
-                <i class="fas fa-star fa-2x"></i>
-                <h3>Unsere Mission</h3>
-                <p>Bei Blindate ist es unsere Mission, das Publikum durch unvergessliche Live-Musikerlebnisse zu begeistern und zu fesseln. Wir streben danach, eine Atmosphäre zu schaffen, die mit jedem Zuhörer in Verbindung steht.</p>
+            <i class="fas fa-star fa-2x"></i>
+            <h3>Unsere Mission</h3>
+            <p>Bei Blindate ist es unsere Mission, das Publikum durch unvergessliche Live-Musikerlebnisse zu begeistern und zu fesseln. Wir streben danach, eine Atmosphäre zu schaffen, die mit jedem Zuhörer in Verbindung steht.</p>
             </div>
         </div>
+        -->
     </div>
 </section>
     <section class="gallery" id="media">
     <h2 style="color: var(--primary);">Das sind wir</h2>
-    <p style="color: var(--light);">Rockin in a free World!</p>
     <div class="gallery-container">
         <div class="gallery-slider">
             <?php
@@ -81,24 +92,25 @@
         <div class="slider-dots"></div>
     </div>
 </section>
+<!--
 <section class="tech" id="tech">
-        <div class="tech">
-            <div class="info-item">
-                <i class="fas fa-star fa-2x"></i>
-                <h3>technisches</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </div>
-            </div>
-    </section>
+    <div class="tech">
+        <div class="info-item">
+        <i class="fas fa-star fa-2x"></i>
+        <h3>technisches</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+-->
 <section class="contact" id="contact">
-        <div class="contact">
-            <div class="info-item">
-                <i class="fas fa-star fa-2x"></i>
-                <h3>So erreicht ihr uns!</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </div>
-            </div>
-    </section>
+    <div class="contact-container" style="display: flex; justify-content: center; align-items: center;">
+        <div class="contact-details" style="text-align: center;">
+            <h2 style="color: var(--primary);">Kontakt</h2>
+            <p>Mario Heinrich</p>
+            <p>+49 1525 4119854</p>
+            <p>info@blindate-band.de</p>
+            <p><a href="https://www.facebook.com/p/BlinDate-100053614727667" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+        </div>
+    </div>
+</section>
 <?php include 'footer.php'; ?>
 </body>
 <script src="script.js"></script>
