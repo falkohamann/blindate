@@ -14,7 +14,7 @@
                 09627 Oberbobritzsch
             </p>
             <h3 style="color: var(--primary);">Kontakt</h3>
-            <p><strong>Telefon:</strong> 0152+49 1525 411985402315000</p>
+            <p><strong>Telefon:</strong> +49 1525 4119854</p>
             <p><strong>E-Mail:</strong> info@blindate-band.de</p>
             <h3 style="color: var(--primary);">Redaktionell verantwortlich</h3>
             <p>Mario Heinrich</p>
@@ -22,4 +22,5 @@
     </div>
 </section>
 <?php include 'footer.php'; ?>
+<script src="script.js"></script>
 </html>

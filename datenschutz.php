@@ -251,5 +251,5 @@
 </main>
 <div id="footer"></div>
 <?php include 'footer.php'; ?>
-</body>
+<script src="script.js"></script>
 </html>

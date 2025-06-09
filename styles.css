@@ -97,7 +97,7 @@ body {
 /* Hero Section */
 .hero {
     height: 85vh;
-    background-image: url('images/website/Header-new.png');
+    background-image: url('images/website/Header-new.webp');
     background-size: contain;
     background-position: center;
     color: var(--light);
