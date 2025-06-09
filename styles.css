@@ -18,7 +18,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: var(--dark);
-    padding-top: 120px; /* Offset for fixed nav */
+    padding-top: 0; /* Remove offset for fixed nav */
 }
 
 /* Navigation */
@@ -27,7 +27,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: #000;
+    background: rgba(0,0,0,0.2); /* Transparent background */
+    backdrop-filter: blur(4px); /* Optional: adds blur for readability */
     position: fixed;
     top: 0;
     left: 0;
@@ -56,7 +57,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: black;
+    background: transparent; /* Remove black background */
 }
 
 .nav-link {
@@ -109,6 +110,9 @@ body {
     padding: 0 1rem;
     background-repeat: no-repeat;
     background-color: var(--dark);
+    margin-top: -100px; /* Pull hero up behind nav (nav height = 100px) */
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -373,6 +377,7 @@ body {
 
     .nav {
         padding: 0.5rem 1rem;
+        background: rgba(0,0,0,0.3); /* Slightly more opaque on mobile for readability */
     }
 
     .nav-mobile {
@@ -433,6 +438,7 @@ body {
         justify-content: flex-end;
         align-items: center;
         text-align: center;
+        margin-top: 0;
     }
 
     .hero h1 {

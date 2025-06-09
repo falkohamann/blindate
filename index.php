@@ -2,14 +2,6 @@
 
     <section class="hero">
     </section>
-    <!--
-   <section class="features features-with-bg">
-        <div class="feature">
-             <h1>Blindate</h1>
-        <p>Rock-Coverband aus Sachsen</p>
-            </div>
-    </section>
--->
     <section class="live-music" id="live-music">
     <div class="live-music-container">
         <h2 style="color: var(--primary); margin-bottom: 2rem; text-align: center;">Hier könnt ihr uns LIVE erleben!</h2>
