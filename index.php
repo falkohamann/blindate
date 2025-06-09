@@ -16,24 +16,6 @@
         <table style="width: 100%; border-collapse: collapse;">
             <tbody>
                 <tr>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Fr. | 09.05.2025 | 19:30</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Bärenzwinger Dresden</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Sa. | 17.05.2025 | 20:00</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Unplugged Geising (privat)</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Sa. | 31.05.2025 | 20:00</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Dorffest Ruppendorf</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">
-                    </td>
-                </tr>
-                <tr>
                     <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Sa. | 14.06.2025 | 20:00</td>
                     <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Dorffest Hermsdorf</td>
                     <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">

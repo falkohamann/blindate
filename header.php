@@ -22,9 +22,9 @@
     <div class="nav-links">
         <a href="#" class="nav-link">Home</a>
         <a href="#live-music" class="nav-link">Live</a>
-        <a href="#about" class="nav-link">Über Uns</a>
+        <a href="#about" class="nav-link">Band</a>
         <a href="#media" class="nav-link">Media</a>
-        <a href="#tech" class="nav-link">Technisches</a>
+        <a href="#tech" class="nav-link">Veranstalter / Presse</a>
         <a href="#contact" class="nav-link">Kontakt</a>
     </div>
 </nav>
