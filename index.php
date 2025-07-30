@@ -59,6 +59,26 @@
             <p>Blindate wurde vor über zwei Jahrzehnten gegründet und brachte eine Gruppe leidenschaftlicher Musiker zusammen. Unser Weg war gefüllt mit unvergesslichen Auftritten und einem Bekenntnis zu Exzellenz in jeder Show, die wir abliefern.</p>
             </div>
             <div class="info-item">
+        <style>
+        .gallery-slider {
+            display: flex;
+            align-items: center;
+        }
+        .gallery-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px; /* Adjust as needed */
+            width: 100%;
+        }
+        .gallery-slide img {
+            max-width: 100%;
+            max-height: 320px; /* Adjust as needed */
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+        </style>
             <i class="fas fa-users fa-2x"></i>
             <h3>Unser Team</h3>
             <p>Lernen Sie unsere talentierten Mitglieder kennen: John, Jane, Mike und Emily. Jeder bringt einzigartige Fähigkeiten und Energie mit und stellt sicher, dass jede Performance ein energiegeladenes Erlebnis ist, das das Publikum fesselt.</p>
@@ -73,6 +93,29 @@
     </div>
 </section>
     <section class="gallery" id="media">
+    <style>
+    .gallery-slider {
+        display: flex;
+        align-items: center;
+    }
+    .gallery-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+    }
+    .gallery-slide img {
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        background: #000; /* Optional: gives a frame for smaller images */
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    </style>
     <h2 style="color: var(--primary);">Das sind wir</h2>
     <div class="gallery-container">
         <div class="gallery-slider">
