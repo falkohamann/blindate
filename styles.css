@@ -303,7 +303,8 @@ body {
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 0.5rem;
+    padding: 1.2rem;
+    font-size: 2.5rem;
     border: none;
     cursor: pointer;
     z-index: 10;
@@ -390,6 +391,11 @@ body {
     .gallery-grid,
     .footer-container {
         grid-template-columns: 1fr;
+    }
+    .slider-prev,
+    .slider-next {
+        padding: 0.8rem;
+        font-size: 2rem;
     }
     @media (max-width: 600px) {
         .gallery-slide {
