@@ -94,16 +94,26 @@
 </section>
     <section class="gallery" id="media">
     <style>
+    .gallery-container {
+        overflow: hidden;
+        width: 100%;
+        max-width: 100vw;
+        position: relative;
+    }
     .gallery-slider {
         display: flex;
         align-items: center;
+        transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+        will-change: transform;
     }
     .gallery-slide {
         display: flex;
         justify-content: center;
         align-items: center;
+        min-width: 100%;
         height: 500px;
-        width: 100%;
+        box-sizing: border-box;
+        padding: 0 8px;
     }
     .gallery-slide img {
         width: 500px;
@@ -114,6 +124,51 @@
         background: #000; /* Optional: gives a frame for smaller images */
         border-radius: 10px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    @media (max-width: 600px) {
+        .gallery-container {
+            overflow: hidden;
+            width: 100vw;
+            position: relative;
+        }
+        .gallery-slider {
+            display: flex;
+            align-items: center;
+        }
+        .gallery-slide {
+            min-width: 100vw;
+            height: 80vw;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        .gallery-slide img {
+            width: 80vw;
+            height: 80vw;
+            margin: 0 auto;
+            display: block;
+        }
+        .slider-prev, .slider-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            border: none;
+            font-size: 2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .slider-prev {
+            left: 10px;
+        }
+        .slider-next {
+            right: 10px;
+        }
     }
     </style>
     <h2 style="color: var(--primary);">Das sind wir</h2>
