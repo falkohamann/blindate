@@ -4,33 +4,60 @@
     </section>
     <section class="live-music" id="live-music">
     <div class="live-music-container">
+    <style>
+    .live-music-container a,
+    .live-music-container a:visited,
+    .live-music-container a:active {
+        color: #fff !important;
+        text-decoration: underline;
+    }
+    </style>
         <h2 style="color: var(--primary); margin-bottom: 2rem; text-align: center;">Hier könnt ihr uns LIVE erleben!</h2>
         <table style="width: 100%; border-collapse: collapse;">
             <tbody>
-                <tr>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Sa. | 14.06.2025 | 20:00</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Dorffest Hermsdorf</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Fr. | 20.06.2025 | 19:30</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Heiderauschen Höckendorf</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">
-                    </td>
-                </tr>
-                 <tr>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Sa. | 21.06.2025 | 19:30</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Sonnenwende Cunnersdorf</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">
-                    </td>
-                </tr>
-             <tr>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Sa. | 05.07.2025 | 19:30</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">Dorffest Hennersdorf</td>
-                    <td style="padding: 1rem; border-bottom: 1px solid var(--grey);">
-                    </td>
-                </tr>
+            <?php
+            $datesFile = __DIR__ . '/dates.txt';
+            if (file_exists($datesFile)) {
+                $lines = file($datesFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+                $validLines = array();
+                foreach ($lines as $line) {
+                    $trimmedLine = ltrim($line);
+                    if ($trimmedLine === '' || strpos($trimmedLine, '#') === 0) {
+                        continue;
+                    }
+                    $validLines[] = $line;
+                }
+                if (empty($validLines)) {
+                    echo '<tr><td colspan="2" style="padding: 1rem; text-align:center;">Momentan stehen leider keine Auftritte an.</td></tr>';
+                } else {
+                    foreach ($validLines as $line) {
+                        $cols = explode(';', $line);
+                        if (count($cols) >= 4) {
+                            $dateStr = trim($cols[0]) . ' | ' . trim($cols[1]) . ' | ' . trim($cols[2]);
+                            $event = htmlspecialchars(trim($cols[3]));
+                            $link = isset($cols[4]) ? trim($cols[4]) : '';
+                            echo '<tr>';
+                            echo '<td style="padding: 1rem; border-bottom: 1px solid var(--grey);">' . htmlspecialchars($dateStr) . '</td>';
+                            echo '<td style="padding: 1rem; border-bottom: 1px solid var(--grey);">';
+                            if (!empty($link)) {
+                                $safeLink = htmlspecialchars($link);
+                                // Ensure the link starts with http:// or https://
+                                if (!preg_match('/^https?:\\/\\//i', $safeLink)) {
+                                    $safeLink = 'https://' . ltrim($safeLink, '/');
+                                }
+                                echo '<a href="' . $safeLink . '" target="_blank" rel="noopener noreferrer">' . $event . '</a>';
+                            } else {
+                                echo $event;
+                            }
+                            echo '</td>';
+                            echo '</tr>';
+                        }
+                    }
+                }
+            } else {
+                echo '<tr><td colspan="2" style="padding: 1rem; text-align:center;">Momentan stehen leider keine Auftritte an.</td></tr>';
+            }
+            ?>
             </tbody>
         </table>
     </div>
