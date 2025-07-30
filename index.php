@@ -78,6 +78,25 @@
                 Besetzung befeuern sie auch gern mal Gartenpartys oder Straßenfeste.
             </p>
         </div>
+        <div class="band-members" style="margin-top:2rem;">
+            <h3 style="color:var(--primary);margin-bottom:1rem;text-align:center;">Blindate besteht aus:</h3>
+            <div style="margin-bottom:1.2rem;">
+                <span style="color:var(--primary);font-weight:bold;font-size:inherit;">Andy:</span> Männertag 2003 wurde er beim Trommeln in einer Blaskapelle entdeckt und ist seitdem dabei.
+                Neben der Musik beschäftigt er sich außerdem gern mit Musik. Häufig vergisst er bei Auftritten sein T-Shirt oder seine Schuhe.
+            </div>
+            <div style="margin-bottom:1.2rem;">
+                <span style="color:var(--primary);font-weight:bold;font-size:inherit;">Gregor:</span> Hat 2005 den Proberaum betreten und ist seitdem einfach da - wie eine Katze. Für einen Keyboarder sieht er relativ gut aus.
+            </div>
+            <div style="margin-bottom:1.2rem;">
+                <span style="color:var(--primary);font-weight:bold;font-size:inherit;">Mario:</span> Seit 2004 bei uns dabei und seitdem für einiges Bekannt - unter anderem für sein unvergleichliches Gitarrenspiel. 2018 trieb ihn die Sehnsucht in weite Ferne. Zurück kam er 2021 mit Frau und Kind sowie Sehnsucht nach der Band.
+            </div>
+            <div style="margin-bottom:1.2rem;">
+                <span style="color:var(--primary);font-weight:bold;font-size:inherit;">Tommy:</span> Dieser Mann war schon in den 80er Jahren eine Größe in sämtlichen hierzulande unbekannten Metal-Bands. 2019 dachten wir uns: Alter Schwabe, der singt jetzt bei uns. Neben der Musik baut er besonders gern Häusle.
+            </div>
+            <div style="margin-bottom:1.2rem;">
+                <span style="color:var(--primary);font-weight:bold;font-size:inherit;">Roy:</span> Seit 2024 erhellt dieser hübsche junge Mann den Proberaum und sorgt mit seiner statuenähnlichen Performance für Sicherheit. Aus dem Gebirge stammend, aber wohl eher seiner Coolness geschuldet hat der Junge selbst im Juli Schnee auf dem Autodach.
+            </div>
+        </div>
         <!--
         <div class="info-grid">
             <div class="info-item">
