@@ -271,11 +271,29 @@ body {
     min-width: 100%;
     position: relative;
 }
+.gallery-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 0 8px;
+}
 
 .gallery-slide img {
     width: 100%;
     height: auto;
     display: block;
+}
+.gallery-slide img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .slider-prev,
@@ -372,6 +390,27 @@ body {
     .gallery-grid,
     .footer-container {
         grid-template-columns: 1fr;
+    }
+    @media (max-width: 600px) {
+        .gallery-slide {
+            min-width: 100vw;
+            height: 80vw;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        .gallery-slide img {
+            width: 80vw;
+            height: 80vw;
+            margin-left: 2vw;
+            margin-right: auto;
+            display: block;
+            left: 0;
+            right: 0;
+            position: relative;
+        }
     }
 
     .nav {
