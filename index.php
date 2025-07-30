@@ -147,8 +147,12 @@
         .gallery-slide img {
             width: 80vw;
             height: 80vw;
-            margin: 0 auto;
+            margin-left: 2vw;
+            margin-right: auto;
             display: block;
+            left: 0;
+            right: 0;
+            position: relative;
         }
         .slider-prev, .slider-next {
             position: absolute;
@@ -167,7 +171,9 @@
             left: 10px;
         }
         .slider-next {
-            right: 10px;
+            right: 16px;
+            /* Make sure the button is fully visible */
+            transform: translateY(-50%) translateX(0);
         }
     }
     </style>
