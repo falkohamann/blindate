@@ -26,7 +26,7 @@
         <a href="#live-music" class="nav-link">Live</a>
         <a href="#about" class="nav-link">Band</a>
         <a href="#media" class="nav-link">Media</a>
-        <!-- <a href="#tech" class="nav-link">Veranstalter / Presse</a> -->
+        <a href="tech.php" class="nav-link">Veranstalter</a>
         <a href="#contact" class="nav-link">Kontakt</a>
     </div>
 </nav>
