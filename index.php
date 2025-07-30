@@ -81,7 +81,7 @@
             $images = scandir($imageDir);
 
             foreach ($images as $image) {
-                if (in_array(pathinfo($image, PATHINFO_EXTENSION), ['jpg', 'jpeg', 'png', 'gif'])) {
+                if (strtolower(pathinfo($image, PATHINFO_EXTENSION)) === 'webp') {
                     echo "<div class='gallery-slide'><img src='$imageDir$image' alt='Gallery Image'></div>";
                 }
             }
