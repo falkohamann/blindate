@@ -90,45 +90,6 @@
                 <span style="color:var(--primary);font-weight:bold;font-size:inherit;">Roy:</span> Seit 2024 erhellt dieser hübsche junge Mann den Proberaum und sorgt mit seiner statuenähnlichen Performance für Sicherheit. Aus dem Gebirge stammend, aber wohl eher seiner Coolness geschuldet hat der Junge selbst im Juli Schnee auf dem Autodach.
             </div>
         </div>
-        <!--
-        <div class="info-grid">
-            <div class="info-item">
-            <i class="fas fa-music fa-2x"></i>
-            <h3>Unsere Geschichte</h3>
-            <p>Blindate wurde vor über zwei Jahrzehnten gegründet und brachte eine Gruppe leidenschaftlicher Musiker zusammen. Unser Weg war gefüllt mit unvergesslichen Auftritten und einem Bekenntnis zu Exzellenz in jeder Show, die wir abliefern.</p>
-            </div>
-            <div class="info-item">
-        <style>
-        .gallery-slider {
-            display: flex;
-            align-items: center;
-        }
-        .gallery-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 350px; /* Adjust as needed */
-            width: 100%;
-        }
-        .gallery-slide img {
-            max-width: 100%;
-            max-height: 320px; /* Adjust as needed */
-            object-fit: contain;
-            display: block;
-            margin: 0 auto;
-        }
-        </style>
-            <i class="fas fa-users fa-2x"></i>
-            <h3>Unser Team</h3>
-            <p>Lernen Sie unsere talentierten Mitglieder kennen: John, Jane, Mike und Emily. Jeder bringt einzigartige Fähigkeiten und Energie mit und stellt sicher, dass jede Performance ein energiegeladenes Erlebnis ist, das das Publikum fesselt.</p>
-            </div>
-            <div class="info-item">
-            <i class="fas fa-star fa-2x"></i>
-            <h3>Unsere Mission</h3>
-            <p>Bei Blindate ist es unsere Mission, das Publikum durch unvergessliche Live-Musikerlebnisse zu begeistern und zu fesseln. Wir streben danach, eine Atmosphäre zu schaffen, die mit jedem Zuhörer in Verbindung steht.</p>
-            </div>
-        </div>
-        -->
     </div>
 </section>
     <section class="gallery" id="media">
