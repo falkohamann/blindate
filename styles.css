@@ -382,6 +382,32 @@ body {
     color: var(--light);
 }
 
+/* Referenzen section styles */
+.referenzen-title {
+    margin-top: 2em;
+    color: var(--primary);
+}
+
+.referenzen-list {
+    margin-bottom: 2em;
+    list-style: disc inside;
+    color: #fff;
+}
+
+/* PDF links styles */
+.pdf-links {
+    margin-top: 2em;
+}
+
+.pdf-link {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.primary-color {
+    color: var(--primary);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .features,
