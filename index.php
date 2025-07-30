@@ -125,10 +125,14 @@
 
             foreach ($images as $image) {
                 if (strtolower(pathinfo($image, PATHINFO_EXTENSION)) === 'webp') {
-                    echo "<div class='gallery-slide'><img src='$imageDir$image' alt='Gallery Image'></div>";
+                    echo "<div class='gallery-slide'><img src='$imageDir$image' alt='Gallery Image' class='gallery-img'></div>";
                 }
             }
             ?>
+        </div>
+        <!-- Overlay for enlarged image -->
+        <div id="gallery-overlay" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.95);justify-content:center;align-items:center;cursor:pointer;">
+            <img id="gallery-overlay-img" src="" alt="Großansicht" style="max-width:90vw;max-height:90vh;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.5);">
         </div>
         <button class="slider-prev">&#10094;</button>
         <button class="slider-next">&#10095;</button>
@@ -157,4 +161,23 @@
 <?php include 'footer.php'; ?>
 </body>
 <script src="script.js"></script>
+</body>
+<script>
+// Lightbox/Overlay for gallery images
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryImages = document.querySelectorAll('.gallery-img');
+    const overlay = document.getElementById('gallery-overlay');
+    const overlayImg = document.getElementById('gallery-overlay-img');
+    galleryImages.forEach(img => {
+        img.addEventListener('click', function(e) {
+            overlayImg.src = img.src;
+            overlay.style.display = 'flex';
+        });
+    });
+    overlay.addEventListener('click', function() {
+        overlay.style.display = 'none';
+        overlayImg.src = '';
+    });
+});
+</script>
 </html>
